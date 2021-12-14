@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: "lexend Deca";
+    text-align: center;
+}
+.btn{
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-size: .8rem;
+    padding: .7rem 1.8rem;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 95%);
+    transition: all 1s;
+}
+.btn:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+}
+.sedan{
+    color: hsl(31, 77%, 52%);
+}
+.suv{
+    color: hsl(184, 100%, 22%);
+}
+.luxury{
+    color: hsl(179, 100%, 13%);
+}
+
+/* Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%) */
+
+.principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 9rem 18rem 6rem 18rem;
+}
+
+.card1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+.card2{
+    background-color: hsl(184, 100%, 22%);
+}
+.card3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+.card{
+    text-align: left;
+    padding: 3rem 3rem 3.5rem 3rem;
+}
+.logo{
+    margin-bottom: 2rem;
+}
+
+.titulo{
+    color: hsl(0, 0%, 95%);
+    font-size: 1.5rem;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.para{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca";
+    font-size: .8rem;
+    line-height: 1.4rem;
+    margin-bottom: 6rem;
+    padding-right: .8rem;
+}
+.attribution{
+    margin-bottom: 3rem;
+}
+/* HASTA ACA PARA 1440PX */
+
+@media only screen and (max-width: 1220px) {
+    .principal{
+        padding: 9rem 11rem 6rem 11rem;
+    }
+    .para{
+        padding-right: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 4rem 1.5rem;
+    }
+    .card1{
+        border-radius: 7px 7px 0 0;
+    }
+    .card3{
+        border-radius: 0 0 7px 7px;
+    }
+    .para{
+        font-size: .9rem;
+        margin-bottom: 2rem;
+        padding-right: .8rem;
+    }
+    
+}
