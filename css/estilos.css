@@ -82,12 +82,12 @@ Very dark cyan: hsl(179, 100%, 13%) */
 }
 /* HASTA ACA PARA 1440PX */
 
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 1290px) {
     .principal{
         padding: 9rem 11rem 6rem 11rem;
     }
     .para{
-        padding-right: 0.5rem;
+        padding-right: 0.9rem;
     }
 }
 
